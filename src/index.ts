@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json({ limit: "10mb" }));
 
 app.get("/", (req, res) => {
-  res.send("The sedulous hyena ate the antelope!");
+  res.send("Hello! This is Trung's nodejs project!");
 })
 
 app.listen(port, () => {
