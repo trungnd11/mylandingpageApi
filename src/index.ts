@@ -4,7 +4,7 @@ import cors from "cors";
 
 
 const app = express();
-const port = 8085;
+const port = process.env.PORT || 8085;
 
 app.use(cors());
 app.use(bodyParser.json({ limit: "10mb" }));
